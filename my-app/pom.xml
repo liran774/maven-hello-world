@@ -9,7 +9,19 @@
   <url>http://maven.apache.org</url>
 <repository>
   <id>liran774</id>
-  <url>https://github.com/liran774/maven-hello-world/tree/master/my-app</url>
+  <url>https://pkgs.dev.azure.com/liran774/_packaging/liran774/maven/v1</url>
+  <releases>
+    <enabled>true</enabled>
+  </releases>
+  <snapshots>
+    <enabled>true</enabled>
+  </snapshots>
+</repository>
+
+<distributionManagement>
+ <repository>
+  <id>liran774</id>
+  <url>https://pkgs.dev.azure.com/liran774/_packaging/liran774/maven/v1</url>
   <releases>
     <enabled>true</enabled>
   </releases>
@@ -17,6 +29,9 @@
     <enabled>true</enabled>
   </snapshots>
 </repository
+<distributionManagement>
+
+
 
   <properties>
       <!-- This property will be set by the Maven Dependency plugin -->
