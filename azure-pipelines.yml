@@ -19,13 +19,3 @@ steps:
     jdkArchitectureOption: 'x64'
     publishJUnitResults: true
     goals: 'package'
-
-- task: PublishBuildArtifacts@1
-  inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-    ArtifactName: 'drop'
-    publishLocation: 'Container'
-- task: Docker@2
-  inputs:
-    command: 'buildAndPush'
-    Dockerfile: 'dockerfile'
