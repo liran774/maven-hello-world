@@ -34,5 +34,5 @@ steps:
     containerRegistry: 'dockerhub'
     repository: 'liran7 / maven'
     command: 'buildAndPush'
-    Dockerfile: '**/Dockerfile'
+    Dockerfile: '**/dockerfile'
     tags: '1.0.0'
