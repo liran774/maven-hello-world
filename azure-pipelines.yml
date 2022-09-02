@@ -19,3 +19,12 @@ steps:
     jdkArchitectureOption: 'x64'
     publishJUnitResults: true
     goals: 'package'
+- task: CopyFiles@2
+  inputs:
+    Contents: '**/*jar'
+    TargetFolder: '$(build.artifactstagingdirectory)'
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'jarfile'
+    publishLocation: 'Container'
