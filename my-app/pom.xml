@@ -43,7 +43,7 @@
     </plugins>
 
   </build>
-  <profiles>
+ <profiles>
     <profile>
       <id>bump-patch</id>
       <activation>
@@ -72,8 +72,8 @@
         </plugins>
       </build>
     </profile>
-    </profiles>
-    <id>bump-minor</id>
+    <profile>
+      <id>bump-minor</id>
       <activation>
         <property>
           <name>bumpMinor</name>
