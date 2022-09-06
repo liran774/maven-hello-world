@@ -13,7 +13,7 @@ steps:
 - task: Maven@3
   inputs:
     mavenPomFile: 'my-app/pom.xml'
-    options: '-DbumpPatch'
+    options: 'mvn validate -DbumpMinor'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     javaHomeOption: 'JDKVersion'
