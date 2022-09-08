@@ -13,7 +13,7 @@ steps:
 - task: Maven@3
   inputs:
     mavenPomFile: 'my-app/pom.xml'
-    options: '-DnewVersion=0.0.1'
+    options: 'versions:set -DnewVersion=0.0.1'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     javaHomeOption: 'JDKVersion'
