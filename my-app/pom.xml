@@ -47,7 +47,7 @@
         </configuration>
       </plugin>    
     </plugins>
-    <finalName>${project.artifactId}.${buildNumber}</finalName>
+    <finalName>${project.artifactId}-${project.version}.${buildNumber}</finalName>
   </build>
   <properties>
      <maven.compiler.source>1.8</maven.compiler.source>
