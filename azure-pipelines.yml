@@ -39,4 +39,4 @@ steps:
     repository: 'liran7 / maven'
     command: 'buildAndPush'
     Dockerfile: '**/dockerfile'
-    tags: '1.0.0'
+    tags: '$(VERSION)'
