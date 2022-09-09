@@ -30,7 +30,7 @@ steps:
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-    ArtifactName: 'jarfile'
+    ArtifactName: 'Version 1.0.0'
     publishLocation: 'Container'
 
 - task: Docker@2
