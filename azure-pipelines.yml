@@ -30,7 +30,7 @@ steps:
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-    ArtifactName: '$(Rev:rrr)	'
+    ArtifactName: '$(VERSION)'
     publishLocation: 'Container'
 
 - task: Docker@2
